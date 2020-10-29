@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Priyal Dubey</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-dark navbar-expand-sm fixed-top"> <!-- bg-primary remove! -->
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mr-auto" href="#"><img src="img/code_mug.png" height="30" width="41"></a>
+        <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home"></span> Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-briefcase fa-lg"></span> Work Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+            </ul>
+            <span class="navbar-text">
+                <a data-toggle="modal" data-target="#rateModal">
+                    <i class="fa fa-star"></i> <i class="fa fa-star-half"></i>
+                    <span class="fas fa-star-half-alt"></span>Rate it
+                </a>
+            </span>
+        </div>
+    </div>
+</nav>
+
+    <div id="rateModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Rate this website</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form_bottom">
+                        <div class="form-group ">
+                            <label for="name" class="sr-only col-md-2 col-form-label">Your Name</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="name" name="name"
+                                    placeholder="Name">
+                            </div>
+                        </div> 
+                        <div class="form-group ">
+                            <label for="emailid" class="sr-only col-md-2 col-form-label">Email</label>
+                            <div class="col-md-10">
+                            <input type="email" class="form-control" id="emailid" name="emailid"
+                                placeholder="Email">
+                            </div>
+                        </div>   
+                        
+                        <div class="form-group row">
+                            
+                                <label for="rate" class="col-md-2 col-form-label">Overall Website Rating</label>
+                            <div> 
+                            <input type="radio" id="1star" name="rate" value="1star">
+                            <label for="1star"><i class="fa fa-star"></i></label><br>
+                            <input type="radio" id="2star" name="rate" value="2star">
+                            <label for="2star"><i class="fa fa-star"></i><i class="fa fa-star "></i></label><br>
+                            <input type="radio" id="3star" name="rate" value="3star">
+                            <label for="3star"><i class="fa fa-star"></i><i class="fa fa-star "></i><i class="fa fa-star "></i></label><br>
+                            <input type="radio" id="4star" name="rate" value="4star">
+                            <label for="4star"><i class="fa fa-star"></i><i class="fa fa-star "></i><i class="fa fa-star "></i><i class="fa fa-star "></i></label><br>
+                            <input type="radio" id="5star" name="rate" value="5star">
+                            <label for="5star"><i class="fa fa-star"></i><i class="fa fa-star "></i><i class="fa fa-star "></i><i class="fa fa-star "></i><i class="fa fa-star "></i></label><br>
+                            </div>
+                        </div>
+    
+                        <div class="form-group row">
+                            <div class="col-md-6 offset-md-2">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input"
+                                        name="approve" id="approve" value="">
+                                    <label class="form-check-label" for="approve">
+                                        <strong>May I contact you?</strong>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                            <div class="col-md-10">
+                            <textarea class="form-control" id="message" name="message"
+                                rows="7" placeholder="Type any suggestions for me.."></textarea>
+                            </div>
+                        </div> 
+    
+                        <div class="form-grp row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-success btn-sm ml-1">
+                                    Send Feedback
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6 align-self-center">
+                    <img class="img-fluid" src="img/me.jpg" height="40%" width="40%" style="border-radius: 50%;">
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                    <h1>Hi, I am Priyal</h1>
+                    <p>I am a UG student at IIT Indore.</p>
+                    <p>Nice to meet you :)</p>
+                </div>
+                <div class="col-12 col-sm align-self-center btn" role="button">
+                    <a role="button" class="btn btn-color btn-block nav-link btn-warning" 
+                        data-toggle="tooltip" data-html="true"
+                        title="Or Email me at <br><strong>me190003044@iiti.ac.in</strong>"
+                        data-placement="bottom"
+                        href="#form_get_in_touch"><i class="fa fa-handshake-o"></i> Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>Eat-Sleep-Code-Repeat</h3>
+            </div>
+            <div class="col col-sm order-sm-first col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail img-fluid align-self-center"
+                    src="img/new_logo.png" alt="Code sleep eat repeat" height="130px" width="130px">
+                    <div class="media-body">
+                    <h2 class="mt-0">Motto <span class="badge badge-danger"><a href="mailto:me190003044@iiti.ac.in">Email</a></span> <span class="badge badge-pill badge-secondary"><a href="https://www.linkedin.com/in/-priyal">Linkedin</a></span></h2>
+                    <p class="d-none d-sm-block">I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.</p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3 ">
+                <h3>To whosoever looking at this</h3>
+            </div>
+            <div  class="col col-sm col-md ">
+                <div class="media">
+                    
+                    <div class="media-body ">
+                        <h2>Nice to meet you!</h2>
+                        <p class="d-none d-sm-block">I am currently looking for any new opportunities and open to work for something interesting, my inbox is always open. Whether you have a position or just want to say hi, I'll get back to you! Hope you're having a nice day :)</p>
+                    </div>
+                    <img class="d-flex mr-3 img-thumbnail img-fluid align-self-center"
+                    src="img/logo_girl.png" alt="Code girl" height="130px" width="130px">
+                    
+                </div>    
+            </div>
+        </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>Technologies- Web Development</h3>
+            </div>
+            <div  class="col col-sm order-sm-first col-md">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail img-fluid align-self-center"
+                    src="img/code_mug.png" alt="Code mug" height="130px" width="130px">
+                    <div class="media-body ">
+                        <h2>Technologies I work with</h2>
+                        <p class="d-none d-sm-block">React, Node.js, Express, Mongo.db</p>
+                        <p>PHP, MySQL, Bootstrap, HTML, CSS </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content" id="form_get_in_touch">
+            <div class="col-12 mb-3">
+            <h3 class="btn-color">Get in Touch</h3>
+            </div>
+            <div class="col-12 col-md-9">
+                <form class="form_bottom">
+                    <div class="form-group row">
+                        <label for="name" class="col-md-2 col-form-label">Your Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="name" name="name"
+                                placeholder="Name">
+                        </div>
+                    </div> 
+                    <div class="form-group row">
+                        <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                        <div class="col-md-10">
+                        <input type="email" class="form-control" id="emailid" name="emailid"
+                            placeholder="Email">
+                        </div>
+                    </div>   
+
+                    <div class="form-group row">
+                        <div class="col-md-6 offset-md-2">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input"
+                                    name="approve" id="approve" value="">
+                                <label class="form-check-label" for="approve">
+                                    <strong>May I contact you?</strong>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label for="message" class="col-md-2 col-form-label">Your Message</label>
+                        <div class="col-md-10">
+                        <textarea class="form-control" id="message" name="message"
+                            rows="6"></textarea>
+                        </div>
+                    </div> 
+
+                    <div class="form-grp row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn btn-primary">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md">
+            </div>
+        </div>
+
+    </div>
+
+        <br> <br> <br>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./aboutus.html">About Me</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Work Experience</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Address</h5>
+                    <address>
+		              Devi Ahilya Hostel<br>
+		              Indian Institute of Technology Indore, Khandwa Road, Simrol,<br>
+		              Indore 453552, India<br>
+		              <i class="fa fa-phone fa-lg"></i> Tel.: +91-7324-306717<br>
+		              <i class="fa fa-fax fa-lg"></i> Tel: +91-731-2438-732/ 758<br>
+		              <i class="fa fa-envelope fa-lg"></i> Email: <a href="http://www.iiti.ac.in/">http://www.iiti.ac.in</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-info" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2020 Priyal Dubey</p>
+                </div>
+           </div>
+        </div>
+
+
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>
